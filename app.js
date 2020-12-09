@@ -11,9 +11,10 @@ const sizes = document.querySelector('.sizes');
 
 // effect
 container.addEventListener('mousemove', e => {
-  // let xAxis = (window.innerWidth / 2 - e.pageX) /25;
-  // let yAxis = (window.innerHeight / 2 - e.pageY) /25;
-  // card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+  let xAxis = (window.innerWidth / 2 - e.pageX) /25;
+  let yAxis = (window.innerHeight / 2 - e.pageY) /25;
+  
+  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
 });
 
 //  Animete in
@@ -30,8 +31,8 @@ container.addEventListener('mouseenter', e => {
 
 // Animate out
 container.addEventListener('mouseleave', e => {
-  // card.style.transition = 'all 0.5s ease'; 
-  // card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  card.style.transition = 'all 0.5s ease'; 
+  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
 
   // popBack
   title.style.transform = 'translateZ(0px)';

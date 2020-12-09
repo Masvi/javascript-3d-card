@@ -1,2 +1,2 @@
-# javascript-3d-shoes-store
-Card for an store shoes with 3d effect 
+# javascript-3d-card
+An animated card with javascript
